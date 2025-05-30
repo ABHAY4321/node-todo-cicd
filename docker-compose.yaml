@@ -2,6 +2,8 @@ version: '3.9'
 
 services:
   web:
-    image: abhay10371/node-app:v3
+    build: .
+    image: node-app:latest
+    #image: abhay10371/node-app:v3
     ports:
       - "8000:8000"
